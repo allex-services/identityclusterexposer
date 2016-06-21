@@ -1,10 +1,9 @@
-function createIdentityClusterExposerService(execlib, ParentServicePack) {
+function createIdentityClusterExposerService(execlib, ParentService) {
   'use strict';
   var lib = execlib.lib,
     qlib = lib.qlib,
     execSuite = execlib.execSuite,
     taskRegistry = execSuite.taskRegistry,
-    ParentService = ParentServicePack.Service,
     RemoteServiceListenerServiceMixin = execSuite.RemoteServiceListenerServiceMixin;
 
   function factoryCreator(parentFactory) {
